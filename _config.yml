@@ -1,7 +1,7 @@
 # Site settings
 title: Udyam 2015 | IITBHU
 email: viyat.bhalodia.ece12@iitbhu.ac.in
-description: > # this means to ignore newlines until "baseurl:"
+description: >
   Udyam is the annual techno-management festival of Department of Electronics Engineering,
   Indian Institute of Technology (BHU), Varanasi.
 baseurl: /2015/
