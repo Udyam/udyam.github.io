@@ -1,381 +1,79 @@
 <!DOCTYPE html>
-<html class="no-js">
-
+<html>
 <head>
-    <title>UDYAM - Techno-Management fest of Dept. of Electronics Engg, IITBHU</title>
-    <meta charset="utf-8" />
-    <meta name="description" content="Udyam is the techno-management fest of Department of Electronics Engineering, Indian Institute of Technology(BHU), Varanasi. It was concieved as an ideal platform for students to partipate and learn, a host of subjects like Open-Hardware Designing, Image-Processing, Open-Source software developement, etc.">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta property="og:title" content="UDYAM - Techno-Management fest of Dept. of Electronics Engg, IITBHU" />
-    <meta property="og:image" content="" />
-    <meta property="og:site_name" content="Udyam-2015" />
-    <meta property="og:description" content="Udyam is the techno-management fest of Department of Electronics Engineering, Indian Institute of Technology(BHU), Varanasi. It was concieved as an ideal platform for students to partipate and learn, a host of subjects like Open-Hardware Designing, Image-Processing, Open-Source software developement, etc." />
-    <link rel="canonical" href="" />
-    <!--//-->
-    <link href="assets/css/style.css" type="text/css" rel="stylesheet" />
+    <meta charset="UTF-8">
+	<title>Udyam</title>
+	<!--[if lt IE 9]>
+     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+	<link href='http://fonts.googleapis.com/css?family=Lato:300,400' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="style/reset.css" media="screen" type="text/css" />
+	<link rel="stylesheet" href="style/style.css" media="screen" type="text/css" />
+	<!--[if gte IE 9]>
+	  <style type="text/css">
+	    .gradient {
+	       filter: none;
+	    }
+	  </style>
+	<![endif]-->
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+	<link rel="icon" href="favicon.ico" type="image/x-icon" />
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+	<script>!window.jQuery && document.write('<script src="lib/jQuery/jquery-1.9.0.min.js"><\/script>');</script>
+	<!--<script type="text/javascript" src="lib/maximage.js"></script>-->
+    <script type="text/javascript" src="http://code.jquery.com/ui/1.10.2/jquery-ui.js"></script>
+	<script type="text/javascript" src="lib/jQuery/jquery.stickOnScroll.js"></script>
+    <script type="text/javascript" src="lib/jQuery/jquery.animate-colors-min.js"></script>
+	<script type="text/javascript" src="lib/waypoints.min.js"></script>
+
+	<script	type="text/javascript" src="js/home.js"></script>
 </head>
-
 <body>
-    <svg style="position:absolute; width:0; height:0;">
-        <defs>
-            <!--//-->
-            <g id="twitter-icon">
-                <path d="M49.352,10.232c-1.812,0.805-3.76,1.348-5.805,1.591c2.087-1.25,3.689-3.23,4.443-5.592c-1.953,1.159-4.115,2-6.418,2.454
-			c-1.843-1.964-4.47-3.192-7.377-3.192c-5.581,0-10.106,4.525-10.106,10.107c0,0.792,0.089,1.563,0.262,2.303
-			c-8.4-0.421-15.848-4.444-20.833-10.56c-0.87,1.492-1.368,3.228-1.368,5.081c0,3.506,1.784,6.6,4.496,8.413
-			c-1.656-0.053-3.215-0.507-4.578-1.265c-0.001,0.042-0.001,0.084-0.001,0.128c0,4.896,3.484,8.982,8.108,9.91
-			c-0.848,0.23-1.741,0.355-2.663,0.355c-0.652,0-1.285-0.062-1.902-0.182c1.287,4.016,5.019,6.938,9.441,7.02
-			c-3.459,2.711-7.816,4.326-12.552,4.326c-0.815,0-1.62-0.049-2.411-0.141c4.474,2.867,9.786,4.541,15.493,4.541
-			c18.59,0,28.756-15.402,28.756-28.758c0-0.438-0.01-0.875-0.029-1.308C46.283,14.04,47.998,12.26,49.352,10.232z" /> </g>
-            <g id="shots-icon">
-                <path d="M63.043,46.522h-2h-54l0,0v-34l0,0h54l0,0v34H63.043h2v-34c-0.008-2.214-1.786-3.992-4-4h-54
-				c-2.214,0.008-3.992,1.786-4,4v34c0.008,2.214,1.786,3.992,4,4h54c2.214-0.008,3.992-1.786,4-4H63.043z" />
-                <path d="M50.043,10.522v-4l0,0h6l0,0v4h4v-4c-0.008-2.214-1.786-3.992-4-4h-6c-2.214,0.008-3.992,1.786-4,4v4
-				H50.043z" />
-                <path d="M19.043,20.522v-2h-6h4v2H19.043v-2V20.522h2v-4c0-0.527-0.213-1.042-0.586-1.414
-				c-0.372-0.373-0.888-0.586-1.414-0.586h-8c-0.527,0-1.042,0.213-1.414,0.586c-0.373,0.372-0.586,0.887-0.586,1.414v4
-				c0,0.527,0.213,1.042,0.586,1.414c0.372,0.373,0.887,0.586,1.414,0.586h8c0.526,0,1.042-0.213,1.414-0.586
-				c0.373-0.372,0.586-0.887,0.586-1.414H19.043z" />
-                <path d="M45.043,32.522h-2c-0.001,2.491-1.004,4.729-2.636,6.364c-1.636,1.632-3.873,2.635-6.364,2.636
-				c-2.492-0.001-4.729-1.004-6.364-2.636c-1.631-1.636-2.635-3.873-2.636-6.364c0.001-2.491,1.004-4.729,2.636-6.364
-				c1.635-1.631,3.873-2.635,6.364-2.636c2.491,0.001,4.729,1.004,6.364,2.636c1.632,1.636,2.635,3.872,2.636,6.364H45.043h2
-				c-0.001-7.181-5.819-12.999-13-13c-7.181,0.001-12.999,5.819-13,13c0.001,7.181,5.819,12.999,13,13c7.181-0.001,12.999-5.819,13-13
-				H45.043z" />
-                <path d="M39.043,32.522h-2c-0.001,0.836-0.333,1.572-0.879,2.122c-0.549,0.545-1.286,0.877-2.121,0.878
-				c-0.835-0.001-1.572-0.333-2.122-0.878c-0.546-0.55-0.877-1.286-0.878-2.122c0.001-0.834,0.333-1.572,0.879-2.121
-				c0.549-0.546,1.287-0.878,2.121-0.879c0.835,0.001,1.572,0.333,2.121,0.879c0.546,0.549,0.878,1.287,0.879,2.121H39.043h2
-				c-0.001-3.866-3.133-6.999-7-7c-3.867,0.001-6.999,3.134-7,7c0.001,3.868,3.134,6.999,7,7c3.866-0.001,6.999-3.133,7-7H39.043z" />
-                <polyline points="5.043,28.522 24.823,28.522 24.823,24.522 5.043,24.522 	" />
-                <polyline points="5.043,40.522 24.823,40.522 24.823,36.522 5.043,36.522 	" />
-                <polyline points="43.264,28.522 63.043,28.522 63.043,24.522 43.264,24.522 	" />
-                <polyline points="63.043,36.522 43.221,36.522 43.221,40.522 63.043,40.522 	" />
-                <path d="M55.217,18.522h-2h1v-1c-0.553,0.001-0.998,0.446-1,1h1v-1v1H55.217c0-0.551-0.449-1-1-1v1H55.217h-1v1
-				C54.768,19.522,55.217,19.073,55.217,18.522h-1v1v-1h-1c0.002,0.554,0.447,0.999,1,1v-1h-1H55.217h2c-0.002-1.659-1.344-2.999-3-3
-				c-1.656,0-3,1.343-3,3c0,1.656,1.344,3,3,3c1.656-0.001,2.998-1.341,3-3H55.217z" /> </g>
-            <g id="home-icon">
-                <path d="M8,32v26h18V40h10v18h18V32c0-1.1-0.9-2-2-2c-1.1,0-2,0.9-2,2l0,22H40V36H22v18H12V32c0-1.1-0.9-2-2-2
-		C8.9,30,8,30.9,8,32L8,32z" />
-                <path d="M3.4,32.4L31,4.8l27.6,27.6c0.8,0.8,2,0.8,2.8,0c0.8-0.8,0.8-2,0-2.8l-29-29c-0.8-0.8-2-0.8-2.8,0l-29,29
-		c-0.8,0.8-0.8,2,0,2.8C1.4,33.2,2.6,33.2,3.4,32.4L3.4,32.4z" />
-                <path d="M40,6h8l0,8c0,1.1,0.9,2,2,2c1.1,0,2-0.9,2-2l0-12H40c-1.1,0-2,0.9-2,2C38,5.1,38.9,6,40,6L40,6z" /> </g>
-            <g id="pin">
-                <path d="M42,22h-2c0.004,1.081-0.26,2.549-0.772,4.221c-0.892,2.935-2.519,6.497-4.457,10.127
-			c-2.908,5.453-6.512,11.088-9.382,15.341c-1.435,2.128-2.687,3.912-3.579,5.162c-0.446,0.625-0.801,1.116-1.045,1.45
-			c-0.122,0.167-0.215,0.295-0.278,0.38l-0.093,0.127L22,60l1.606-1.191c-0.001-0.001-0.073-0.099-0.217-0.295
-			c-1.078-1.472-5.997-8.273-10.613-15.94c-2.308-3.83-4.539-7.881-6.169-11.549c-0.815-1.833-1.479-3.57-1.929-5.114
-			C4.227,24.367,3.997,23.013,4,22c0.001-4.977,2.012-9.464,5.272-12.728C12.536,6.012,17.023,4.001,22,4
-			c4.977,0.001,9.464,2.012,12.728,5.272C37.989,12.536,40,17.023,40,22H42h2C44,9.849,34.151,0.001,22,0
-			C9.849,0.001,0.001,9.849,0,22c0.003,1.681,0.365,3.472,0.946,5.388c1.022,3.345,2.745,7.072,4.754,10.844
-			c6.024,11.286,14.666,22.918,14.694,22.96C20.773,61.702,21.366,62,22,62s1.228-0.298,1.606-0.809
-			c0.02-0.027,5.044-6.797,10.097-15c2.526-4.104,5.061-8.563,6.989-12.759c0.964-2.099,1.777-4.132,2.361-6.045
-			C43.635,25.472,43.997,23.681,44,22H42z" />
-                <path d="M30,22h-2c-0.001,1.663-0.669,3.15-1.758,4.243C25.151,27.332,23.664,27.999,22,28
-				c-1.664-0.001-3.151-0.668-4.243-1.757C16.668,25.15,16.001,23.663,16,22c0.001-1.663,0.668-3.15,1.757-4.243
-				C18.85,16.668,20.337,16.001,22,16c1.663,0.001,3.15,0.668,4.242,1.757C27.332,18.85,28,20.337,28,22H30h2
-				C32,16.476,27.524,12.001,22,12c-5.523,0.001-9.999,4.476-10,10c0.001,5.524,4.477,9.999,10,10c5.523-0.001,9.999-4.476,10-10H30z" /> </g>
-            <g id="phone">
-                <path d="M54.362,4.92l-0.4,1.959c1.248,0.25,2.457,1.004,3.327,2.044c0.874,1.039,1.382,2.322,1.378,3.562v3.348
-			c-0.001,0.829-0.333,1.568-0.881,2.119c-0.551,0.548-1.29,0.88-2.119,0.881h-8h-0.002c-0.827,0-1.565-0.333-2.117-0.881
-			c-0.548-0.551-0.88-1.291-0.881-2.119v-2c0-1.026-0.782-1.889-1.803-1.99c-3.8-0.377-7.497-0.566-11.195-0.566
-			s-7.397,0.189-11.199,0.566c-1.021,0.101-1.803,0.964-1.803,1.99v2c0,0.829-0.333,1.568-0.881,2.119
-			c-0.551,0.548-1.29,0.88-2.117,0.881H15.66h0.006h-8c-0.829-0.001-1.568-0.333-2.119-0.881c-0.548-0.551-0.88-1.29-0.881-2.119
-			v-3.348v-0.003l-0.812,0.001h0.812v-0.001l-0.812,0.001h0.812c-0.003-1.24,0.504-2.522,1.378-3.561
-			c0.87-1.04,2.08-1.793,3.327-2.043l0,0c7.244-1.476,14.708-2.254,22.298-2.254c7.34,0,14.799,0.727,22.293,2.254l-0.001,0
-			L54.362,4.92l0.399-1.96c-7.76-1.581-15.487-2.334-23.092-2.334c-7.864,0-15.596,0.806-23.097,2.334l0,0
-			C6.336,3.421,4.394,4.673,2.982,6.35c-1.408,1.678-2.312,3.821-2.315,6.134v0.005v-0.003v3.348c0.004,3.865,3.135,6.996,7,7h8
-			h0.006l-0.004-1.437v1.437h0.004l-0.004-1.437v1.437c3.864-0.005,6.993-3.135,6.998-7v-2h-2l0.197,1.99
-			c3.679-0.364,7.242-0.546,10.805-0.546s7.124,0.182,10.801,0.546l0.197-1.99h-2v2c0.005,3.865,3.135,6.995,6.998,7h0.002h8
-			c3.865-0.004,6.995-3.135,7-7v-3.348c-0.004-2.312-0.907-4.457-2.314-6.135c-1.412-1.677-3.355-2.93-5.59-3.39l-0.001,0
-			L54.362,4.92z" />
-                <path d="M54.667,52.833v-2h-44v-5.565c0-5.059,1.849-9.607,4.909-12.882c3.068-3.272,7.312-5.286,12.308-5.292
-			h7.565c4.996,0.006,9.24,2.02,12.309,5.292c3.061,3.274,4.908,7.823,4.909,12.882v7.565H54.667v-2V52.833h2v-7.565
-			c0.001-6.036-2.212-11.574-5.986-15.613c-3.768-4.041-9.132-6.566-15.231-6.561h-7.565c-6.1-0.006-11.464,2.52-15.23,6.561
-			c-3.774,4.039-5.987,9.577-5.986,15.613v7.565c0,0.526,0.213,1.042,0.586,1.414c0.372,0.373,0.887,0.586,1.414,0.586h46
-			c0.526,0,1.042-0.213,1.414-0.586c0.373-0.372,0.586-0.888,0.586-1.414H54.667z" />
-                <path d="M24.667,20.051v5.043c0,1.104,0.896,2,2,2s2-0.896,2-2v-5.043c0-1.104-0.896-2-2-2
-			S24.667,18.947,24.667,20.051" />
-                <path d="M34.709,20.051v5.043c0,1.104,0.896,2,2,2s2-0.896,2-2v-5.043c0-1.104-0.896-2-2-2
-			S34.709,18.947,34.709,20.051" />
-                <path d="M40.667,39.833h-2c-0.001,1.939-0.78,3.677-2.05,4.95c-1.273,1.27-3.011,2.049-4.95,2.05
-			c-1.94-0.001-3.677-0.78-4.95-2.05c-1.27-1.273-2.049-3.011-2.05-4.95c0.001-1.939,0.78-3.677,2.05-4.95
-			c1.273-1.27,3.01-2.049,4.95-2.05c1.939,0.001,3.677,0.78,4.95,2.05c1.27,1.273,2.049,3.011,2.05,4.95H40.667h2
-			c-0.001-6.076-4.924-10.999-11-11c-6.077,0.001-10.999,4.924-11,11c0.001,6.076,4.923,10.999,11,11c6.076-0.001,10.999-4.924,11-11
-			H40.667z" /> </g>
-            <g id="latest-icon">
-                <path d="M47.522,34.521h3c1.612,0.008,2.796,0.552,3.64,1.401c0.836,0.856,1.355,2.066,1.36,3.599
-				c-0.005,1.532-0.524,2.742-1.36,3.599c-0.843,0.85-2.028,1.394-3.64,1.401h-3c-1.104,0-2,0.896-2,2s0.896,2,2,2h3
-				c2.566,0.008,4.881-0.948,6.494-2.599c1.619-1.644,2.511-3.934,2.506-6.401c0.005-2.468-0.887-4.758-2.506-6.401
-				c-1.612-1.65-3.928-2.606-6.494-2.599h-3c-1.104,0-2,0.896-2,2S46.417,34.521,47.522,34.521z" />
-                <path d="M47.522,55.521h-2c-0.006,0.964-0.34,1.66-0.854,2.172c-0.52,0.506-1.247,0.825-2.146,0.828h-22
-				c-0.858-0.002-1.589-0.332-2.13-0.87c-0.538-0.542-0.868-1.272-0.87-2.13v-25h28v25H47.522h2v-27c0-0.527-0.213-1.042-0.586-1.414
-				c-0.372-0.373-0.887-0.586-1.414-0.586h-32c-0.527,0-1.042,0.213-1.414,0.586c-0.373,0.372-0.586,0.887-0.586,1.414v27
-				c-0.002,1.927,0.775,3.696,2.042,4.958c1.262,1.266,3.031,2.043,4.958,2.042h22c1.886,0.003,3.66-0.709,4.943-1.969
-				c1.289-1.253,2.063-3.058,2.057-5.031H47.522z" />
-                <path d="M48.135,2.683L46.463,3.78c0.471,0.729,0.557,1.177,0.562,1.527C47.023,5.58,46.963,5.84,46.82,6.163
-				c-0.211,0.481-0.635,1.06-1.144,1.695c-0.253,0.32-0.523,0.656-0.79,1.03c-0.265,0.375-0.53,0.788-0.745,1.292v0
-				c-0.345,0.817-0.528,1.673-0.528,2.521c-0.003,1.184,0.367,2.345,1.048,3.296c0.678,0.956,1.646,1.696,2.777,2.172v0
-				c0.91,0.384,1.832,0.588,2.734,0.588c1.021,0.003,2.002-0.27,2.828-0.748c1.246-0.719,2.125-1.837,2.69-3.074
-				c0.566-1.243,0.84-2.63,0.842-4.059c-0.002-2.052-0.574-4.216-1.871-6.089c-1.29-1.873-3.355-3.405-6.055-4.049
-				c-0.798-0.193-1.632,0.121-2.105,0.792c-0.473,0.671-0.488,1.562-0.038,2.249L48.135,2.683l-0.47,1.944
-				c1.792,0.443,2.925,1.33,3.71,2.444c0.777,1.113,1.158,2.503,1.156,3.807c0.005,1.207-0.336,2.309-0.802,2.967
-				c-0.231,0.333-0.479,0.557-0.724,0.698c-0.248,0.139-0.492,0.212-0.834,0.215c-0.301,0-0.687-0.066-1.18-0.273v0
-				c-0.53-0.225-0.863-0.512-1.07-0.803c-0.205-0.294-0.305-0.595-0.308-0.979c0-0.274,0.058-0.595,0.214-0.967v0
-				c0.051-0.132,0.23-0.426,0.51-0.789c0.416-0.553,1.036-1.256,1.602-2.159c0.56-0.896,1.085-2.071,1.085-3.48
-				c0.005-1.218-0.41-2.502-1.217-3.722L48.135,2.683l-0.47,1.944L48.135,2.683z" />
-                <path d="M42.18,29.486l6.957-12.638c0.533-0.967,0.18-2.184-0.788-2.716c-0.967-0.533-2.184-0.18-2.716,0.788
-				l-6.957,12.638c-0.533,0.967-0.18,2.184,0.788,2.716C40.431,30.806,41.647,30.454,42.18,29.486" />
-                <path d="M48.203,16.049l-4.459,11.764c-0.392,1.033,0.128,2.188,1.161,2.579c1.033,0.392,2.188-0.128,2.579-1.161
-				l4.459-11.764c0.392-1.033-0.128-2.188-1.161-2.579C49.749,14.496,48.594,15.016,48.203,16.049" />
-                <path d="M25.522,28.521v-2h-6.764l-3.294-6.588l-0.461-3.691l3.001,1.715l5.729,11.458L25.522,28.521v-2V28.521
-				l1.789-0.895l-6-12c-0.175-0.349-0.458-0.648-0.797-0.842l-7-4c-0.659-0.377-1.47-0.349-2.102,0.072
-				c-0.632,0.421-0.969,1.159-0.875,1.912l1,8c0.027,0.22,0.096,0.448,0.195,0.646l4,8c0.34,0.679,1.03,1.105,1.789,1.105h8
-				c0.695,0,1.336-0.357,1.701-0.949c0.366-0.591,0.398-1.324,0.088-1.946L25.522,28.521z" />
-                <path d="M14.631,22.186l6-4c0.919-0.613,1.167-1.854,0.555-2.773s-1.854-1.167-2.773-0.555l-6,4
-				c-0.919,0.613-1.167,1.854-0.555,2.773S13.712,22.798,14.631,22.186" />
-                <path d="M39.522,2.521v-2h-12c-0.527,0-1.042,0.213-1.414,0.586c-0.373,0.372-0.586,0.887-0.586,1.414v26
-				c0,0.527,0.213,1.042,0.586,1.414c0.372,0.373,0.887,0.586,1.414,0.586h12c0.527,0,1.042-0.213,1.414-0.586
-				c0.373-0.372,0.586-0.887,0.586-1.414v-26c0-0.527-0.213-1.042-0.586-1.414c-0.372-0.373-0.887-0.586-1.414-0.586V2.521h-2v24h-8
-				v-22h10V2.521h-2H39.522z" />
-                <path d="M39.522,6.521h-6c-1.104,0-2,0.896-2,2s0.896,2,2,2h6c1.104,0,2-0.896,2-2S40.626,6.521,39.522,6.521" />
-                <path d="M39.522,10.521h-4c-1.104,0-2,0.896-2,2s0.896,2,2,2h4c1.104,0,2-0.896,2-2S40.626,10.521,39.522,10.521" />
-                <path d="M39.522,14.521h-6c-1.104,0-2,0.896-2,2s0.896,2,2,2h6c1.104,0,2-0.896,2-2S40.626,14.521,39.522,14.521" />
-                <path d="M39.522,20.521h-4c-1.104,0-2,0.896-2,2s0.896,2,2,2h4c1.104,0,2-0.896,2-2S40.626,20.521,39.522,20.521" /> </g>
-            <g id="facebook-icon">
-                <path d="M35.566,16.207h-7.645v-5.014c0-1.883,1.246-2.322,2.125-2.322c0.877,0,5.395,0,5.395,0V0.593l-7.43-0.029
-			c-8.248,0-10.125,6.174-10.125,10.125v5.518h-4.77v8.529h4.77c0,10.947,0,24.136,0,24.136h10.035c0,0,0-13.32,0-24.136h6.768
-			L35.566,16.207z" /> </g>
-            <g id="email">
-                <path d="M60.417,42.044h-2c0.006,0.422-0.212,0.935-0.62,1.336c-0.405,0.402-0.941,0.625-1.38,0.619h-50
-				c-0.438,0.006-0.975-0.217-1.379-0.619c-0.409-0.401-0.626-0.914-0.621-1.336V12c-0.007-0.424,0.217-0.959,0.631-1.369
-				C5.458,10.217,5.993,9.994,6.417,10h50c0.424-0.007,0.958,0.217,1.369,0.631c0.414,0.41,0.638,0.945,0.631,1.369v30.044H60.417h2
-				V12c-0.007-1.666-0.739-3.131-1.803-4.198C59.546,6.739,58.081,6.007,56.417,6h-50C4.752,6.007,3.287,6.739,2.22,7.802
-				C1.156,8.87,0.423,10.335,0.417,12v30.044c0.006,1.666,0.745,3.131,1.813,4.186c1.073,1.053,2.537,1.764,4.187,1.77h50
-				c1.649-0.006,3.113-0.717,4.187-1.77c1.069-1.055,1.808-2.52,1.813-4.186H60.417z" />
-                <path d="M51.307,16.336l-19.89,13.26l-19.891-13.26c-0.919-0.613-2.161-0.364-2.773,0.555s-0.364,2.161,0.555,2.773
-				l21,13.999c0.673,0.448,1.546,0.448,2.219,0l21-13.999c0.919-0.613,1.167-1.854,0.555-2.773S52.226,15.724,51.307,16.336z" />
-                <path d="M11.526,38.664l9-6c0.919-0.612,1.167-1.854,0.555-2.773s-1.854-1.167-2.773-0.555l-9,6
-				c-0.919,0.612-1.167,1.854-0.555,2.773S10.607,39.276,11.526,38.664" />
-                <path d="M53.526,35.335l-9-6c-0.919-0.613-2.161-0.364-2.773,0.555s-0.364,2.161,0.555,2.773l9,6
-				c0.919,0.612,2.161,0.364,2.773-0.555S54.445,35.948,53.526,35.335" /> </g>
-            <g id="dropdown">
-                <path d="M18.961,21.033L31.417,8.579l12.455,12.455c0.781,0.781,2.047,0.781,2.828,0
-				c0.781-0.781,0.781-2.047,0-2.828L32.831,4.336c-0.781-0.781-2.047-0.781-2.828,0l-13.87,13.869c-0.781,0.781-0.781,2.047,0,2.828
-				C16.914,21.814,18.18,21.814,18.961,21.033z" />
-                <path d="M16.133,45.294l13.87,13.869c0.781,0.781,2.047,0.781,2.828,0L46.7,45.294c0.781-0.781,0.781-2.047,0-2.828
-				s-2.047-0.781-2.828,0L31.417,54.921L18.961,42.466c-0.781-0.781-2.047-0.781-2.828,0C15.352,43.248,15.352,44.513,16.133,45.294z" /> </g>
-            <g id="contact-icon">
-                <path d="M50.969,24.659l9.118,6.145v25.414c-0.002,0.983-0.8,1.781-1.783,1.783H7.869
-			c-0.498-0.001-0.931-0.196-1.26-0.522c-0.326-0.329-0.521-0.763-0.522-1.261V30.803l9.118-6.145
-			c0.916-0.618,1.158-1.86,0.541-2.776c-0.618-0.916-1.86-1.158-2.776-0.541l-10,6.739c-0.549,0.37-0.882,0.997-0.882,1.659v26.478
-			C2.089,59.411,4.675,61.998,7.869,62h50.435c3.194-0.002,5.781-2.589,5.783-5.783V29.739c0-0.662-0.333-1.289-0.883-1.659
-			l-10-6.739c-0.916-0.617-2.158-0.375-2.775,0.541S50.054,24.041,50.969,24.659L50.969,24.659z" />
-                <path d="M12.379,54.526L24.819,44h16.535l12.44,10.526c0.843,0.714,2.105,0.608,2.818-0.234
-				c0.714-0.844,0.608-2.105-0.234-2.818l-13-11C43.02,40.169,42.558,40,42.087,40h-18c-0.471,0-0.933,0.169-1.292,0.474l-13,11
-				c-0.843,0.713-0.948,1.975-0.235,2.818C10.273,55.135,11.536,55.24,12.379,54.526z" />
-                <path d="M60.978,28.075L45.847,38.162c-0.919,0.612-1.168,1.854-0.555,2.773c0.612,0.919,1.854,1.167,2.773,0.555
-				l15.131-10.087c0.919-0.613,1.167-1.854,0.555-2.773S61.896,27.462,60.978,28.075" />
-                <path d="M2.978,31.403l15.13,10.087c0.919,0.612,2.161,0.364,2.773-0.555s0.364-2.161-0.555-2.773L5.196,28.075
-				c-0.919-0.613-2.161-0.364-2.773,0.555S2.059,30.791,2.978,31.403" />
-                <path d="M54.087,36.406V2c0-0.527-0.213-1.042-0.586-1.414C53.129,0.213,52.613,0,52.087,0h-38
-				c-0.527,0-1.042,0.213-1.414,0.586C12.3,0.958,12.087,1.473,12.087,2v34.406c0,1.104,0.896,2,2,2s2-0.896,2-2V4h34v32.406
-				c0,1.104,0.896,2,2,2S54.087,37.51,54.087,36.406z" />
-                <path d="M22.087,12h5c1.104,0,2-0.896,2-2s-0.896-2-2-2h-5c-1.104,0-2,0.896-2,2S20.982,12,22.087,12" />
-                <path d="M27.087,18h17c1.104,0,2-0.896,2-2s-0.896-2-2-2h-17c-1.104,0-2,0.896-2,2S25.982,18,27.087,18" />
-                <path d="M22.087,26h22c1.104,0,2-0.896,2-2s-0.896-2-2-2h-22c-1.104,0-2,0.896-2,2S20.982,26,22.087,26" />
-                <path d="M22.087,34h22c1.104,0,2-0.896,2-2s-0.896-2-2-2h-22c-1.104,0-2,0.896-2,2S20.982,34,22.087,34" /> </g>
-            <g id="close">
-                <path d="M60.629,0.586l-58,58c-0.781,0.781-0.781,2.047,0,2.828c0.781,0.781,2.047,0.781,2.828,0l58-58
-				c0.781-0.781,0.781-2.047,0-2.828C62.676-0.195,61.411-0.195,60.629,0.586" />
-                <path d="M63.458,58.586l-58-58c-0.781-0.781-2.047-0.781-2.828,0c-0.781,0.781-0.781,2.047,0,2.828l58,58
-				c0.781,0.781,2.047,0.781,2.828,0S64.239,59.367,63.458,58.586" /> </g>
-        </defs>
-    </svg>
-    <nav class="mobile-nav">
-        <ul>
-            <li>
-                <a href="#intro" class="scroll">
-                    <svg viewBox="0 0 68 72">
-                        <use xlink:href="#home-icon"></use>
-                    </svg> <span>Home</span> </a>
-            </li>
-            <li>
-                <a href="#latest" class="scroll">
-                    <svg viewBox="0 0 67.043 63.826">
-                        <use xlink:href="#latest-icon"></use>
-                    </svg> <span>Events/ Workshops</span> </a>
-            </li>
-            <li>
-                <a href="#contact" class="scroll">
-                    <svg viewBox="0 0 67.043 63.826">
-                        <use xlink:href="#contact-icon"></use>
-                    </svg> <span>Sponsors</span> </a>
-            </li>
-            <li>
-                <a href="#register" class="scroll">
-                    <svg viewBox="0 0 67.043 63.826">
-                        <use xlink:href="#contact-icon"></use>
-                    </svg> <span>Register</span> </a>
-            </li>
-        </ul>
-    </nav>
-    <nav class="main">
-        <a class="nav-logo scroll" href="#intro">
-            <svg viewBox="0 0 400 400">
-                <use xlink:href="#logo"></use>
-            </svg>
-        </a> <a id="menu-icon" class="mobile-menu-link" href="#" title="Menu"><span class="line line-1"></span><span class="line line-2"></span><span class="line line-3"></span></a>
-        <ul class="full-nav">
-            <li>
-                <a href="#intro" class="scroll">
-                    <svg viewBox="0 0 68 72">
-                        <use xlink:href="#home-icon"></use>
-                    </svg>
-                    <div class="nav-label"><span>Home</span>
-                    </div>
-                </a>
-            </li>
-            <li>
-                <a href="#latest" class="scroll">
-                    <svg viewBox="0 0 67.043 63.826">
-                        <use xlink:href="#latest-icon"></use>
-                    </svg>
-                    <div class="nav-label"><span>Events/Workshops</span>
-                    </div>
-                </a>
-            </li>
-            <li>
-                <a href="/sponsors" rel="modal:open">
-                    <svg viewBox="0 0 67.043 63.826">
-                        <use xlink:href="#contact-icon"></use>
-                    </svg>
-                    <div class="nav-label"><span>Sponsors</span>
-                    </div>
-                </a>
-            </li>
-            <li>
-                <a href="/register" rel="modal:open">
-                    <svg viewBox="0 0 67.043 63.826">
-                        <use xlink:href="#contact-icon"></use>
-                    </svg>
-                    <div class="nav-label"><span>Register</span>
-                    </div>
-                </a>
-            </li>
-        </ul>
-        <ul class="social">
-            <li>
-                <a target="_blank" href="https://facebook.com/">
-                    <svg viewBox="0 0 49.439 49.437">
-                        <use xlink:href="#facebook-icon"></use>
-                    </svg> <span>Facebook</span> </a>
-            </li>
-        </ul>
-    </nav>
-    <div id="wrapper" class="wrapper">
-        <section class="intro" id="intro">
-            <div class="full-section-wrapper">
-                <div class="logo-wrapper">
-                    <svg viewBox="0 0 400 400">
-                        <use xlink:href="#logo"></use>
-                    </svg>
-                </div>
-                <div class="section-content">
-                    <header>
-                        <h1 class="title main-title">UDYAM</h1>
-                    </header>
-
-                    <p>Udyam is the techno-management fest of Department of Electronics Engineering, IITBHU, Varanasi.</p>
-                </div>
-            </div>
-
-        </section>
-
-        <!-- Latest Project -->
-        <section class="latest" id="latest">
-
-            <!-- Show img on mobile and video on 750px+ -->
-            <div class="video-container" data-r1000='<video id="video" preload="yes" loop="loop" muted="muted">
-                    <source src="https://cdn.upverter.com/videos/bgvideowebm_desaturate.webmhd.webm" type="video/webm">
-                    <source src="https://cdn.upverter.com/videos/bgvideowebm_desaturate.mp4.mp4" type="video/mp4">
-	               <img src="images/latest-bg.jpg" alt="your browser does not support html5 video" />
-	                    </video>'>
-            </div>
-
-            <div class="full-section-wrapper">
-
-                <!-- Content -->
-                <div class="section-content">
-
-                    <header>
-                        <h1 class="title">Events</h1>
-                    </header>
-
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque congue posuere nisi eu placerat. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Suspendisse nec ligula risus. Quisque id interdum orci, a congue lacus. Sed eu augue eu eros luctus interdum sit amet id lacus. Nunc lacinia tellus non consequat faucibus. Mauris vel libero sed orci blandit tempus et et tellus. Pellentesque id maximus nulla, in ullamcorper dolor.</p>
-
-                    <a class="box-link" target="_blank" href="">See all events</a>
-                    </p>
-
-                </div>
-
-            </div>
-        </section>
-
-    <!-- Modal for sponsors embedded -->
-      <div id="sponsors" class="section-content">
-            <div class="row">
-
-            <div class="f50 centered section-header--alt">
-              <h3 class="panel-heading">Partners</h3>
-            </div>
-
-            <div class="sponsor-icons">
-
-              <div class="sponsor-row">
-                <div class="f33 sponsor-icon shift-1">
-                  <a href="https://ace.ng.bluemix.net" target="_blank" onClick="_gaq.push(['_trackEvent', 'Partners', 'Click', 'IBM']);"><i class="sponsor_ibm"></i></a>
-                </div>
-                <div class="f33 sponsor-icon shift">
-                  <a href="http://www.pusher.com" target="_blank" onClick="_gaq.push(['_trackEvent', 'Partners', 'Click', 'Pusher']);"><i class="sponsor_pusher"></i></a>
-                </div>
-                <div class="f33 sponsor-icon shift1">
-                  <a href="http://www.wetransfer.com" target="_blank" onClick="_gaq.push(['_trackEvent', 'Partners', 'Click', 'WeTransfer']);"><i class="sponsor_wetransfer"></i></a>
-                </div>
-              </div>
-
-              <div class="sponsor-row">
-                <div class="f33 sponsor-icon shift-1">
-                  <a href="http://www.campaignmonitor.com" target="_blank" onClick="_gaq.push(['_trackEvent', 'Partners', 'Click', 'Campaign Monitor']);"><i class="sponsor_cm"></i></a>
-                </div>
-                <div class="f33 sponsor-icon shift">
-                  <a href="http://www.bima.co.uk" target="_blank" onClick="_gaq.push(['_trackEvent', 'Partners', 'Click', 'BIMA']);"><i class="sponsor_bima"></i></a>
-                </div>
-                <div class="f33 sponsor-icon shift1">
-                  <a href="http://www.ukmarketingnetwork.co.uk" target="_blank" onClick="_gaq.push(['_trackEvent', 'Partners', 'Click', 'ukmn']);"><i class="sponsor_ukmn"></i></a>
-                </div>
-              </div>
-            </div>
-
+    <header id="nav">
+		<div id="top"><a href="/" title="Udyam 2015">
+			<img id="logo" src="img/logo.svg" alt="" title="Udyam" />
+			<img id="ital" src="img/udyam.png" alt="" title="Udyam 2015" />
+		</a></div>
+        <nav>
+            <ul>
+                <li id="link2"><a href="about.html" title="About">About<span></span></a></li>
+                <li id="link1"><a href="workshops.html" title="Workshops">Workshops<span></span></a></li>
+                <li id="link3"><a href="#" title="Events">Events<span></span></a></li>
+                <li id="link4"><a href="index.html#sponsors-block" title="Sponsors">Sponsors<span></span></a></li>
+                <li id="link5"><a href="#" title="Register">Register<span></span></a></li>
+            </ul>
+        </nav>
+		<div id="minisocial">
+			<a class="fb" href="https://www.facebook.com/" title="" target="_blank"></a>
+			<a class="tw" href="https://twitter.com/" title="Account ufficiale Twitter" target="_blank"></a>
+			<a class="gp" href="https://plus.google.com/" title="Google+" target="_blank"></a>
+			<a class="in" href="http://instagram.com/" title="" target="_blank"></a>
         </div>
-        <a href="#" rel="modal:close">Close</a> or press ESC</p>
-      </div>
-
-        <!-- Modal HTML embedded directly into document -->
-      <div id="register" style="display:none;">
-        <p>Thanks for clicking.  That felt good.  <a href="#" rel="modal:close">Close</a> or press ESC</p>
-      </div>
-
-    </div>
-
-    </div>
-    <!-- Wrapper End -->
-
-    <!--[if gte IE 9]><!-->
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
-    <script src="assets/js/jquery.modal.min.js"></script>
-    <!--<![endif]-->
-    <script src="assets/js/main.js"></script>
-
+	</header>
+	<div class="iit"><img src="img/iitbhu_logo.png" width="25" height="25" /></div>
+	<section id="intro">
+		<img src="img/udyam.svg" class="udyam" />
+		<span class="line"></span>
+		<p>The techno-management fest of Department of Electronics Engineering, IITBHU.</p>
+			<video id="video_background" poster="img/no_video.png" loop>
+			</video>
+	</section>
+    <div id="home">
+		<div class="sponsors-block" id="sponsors-block">
+			<h2>Last year's<br /> SPONSORS<span class="desc"></span></h2>
+			<div>
+				<img src="img/certificato_aromi_naturali.png" alt="Certificato Aromi Naturali" title="Certificato Aromi Naturali" />
+			</div>
+			<div>
+				<img src="img/certificato_fsc.png" alt="Certificato FSC" title="Certificato FSC" />
+			</div>
+			<div>
+				<img src="img/ogm_free.png" alt="OGM free" title="OGM Free" />
+			</div>
+			<a href="#">SPONSOR US!</a>
+		</div>
+	<link rel="stylesheet" href="http://malihu.github.io/custom-scrollbar/jquery.mCustomScrollbar.min.css" />
+	<script src="http://malihu.github.io/custom-scrollbar/jquery.mCustomScrollbar.concat.min.js"></script>
+	</div>
 </body>
-
 </html>
