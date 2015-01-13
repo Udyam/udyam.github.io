@@ -684,8 +684,8 @@ a img {
 
 #manifesto article {
     display:block;
-    float:right;
     position:relative;
+    float: right;
     margin:0;
     padding:0;
     min-height:100%;
@@ -706,7 +706,6 @@ a img {
     clear:both;
     width:100%;
     margin:0;
-    padding:100px 0
 }
 
 #manifesto header h1 {
@@ -737,7 +736,7 @@ a img {
     font-size:18px;
     text-align:center;
     font-style:italic;
-    color:#fff;
+    color:#ffd327;
     -webkit-animation-delay:1.2s;
     animation-delay:1.2s
 }
@@ -774,7 +773,6 @@ a img {
     clear:both;
     position:relative;
     width:100%;
-    margin:70px 0 0
 }
 
 #manifesto article section h2 {
@@ -785,7 +783,6 @@ a img {
     height:40px;
     line-height:40px;
     margin:0;
-    padding:0;
     font-family:'Lato',sans-serif;
     font-size:18px;
     letter-spacing:4px;
@@ -795,26 +792,21 @@ a img {
     color:#ffd327;
     -webkit-animation-delay:1.4s;
     animation-delay:1.4s;
-    margin-top:5%
 }
 
 #manifesto article section p {
-    display:block;
-    float:left;
-    clear:both;
+    display:inline-block;
+    float:center;
     width:74%;
-    line-height:18px;
-    margin:0;
-    padding:0;
+    line-height:28px;
     font-family:'Lato',sans-serif;
-    font-size:100%;
+    font-size:170%;
     text-align:justify;
-    margin:0;
-    padding:10px 13%;
+    padding:12%;
+    margin-bottom: auto;
     color:#5a6770;
     -webkit-animation-delay:1.5s;
     animation-delay:1.5s;
-    margin-top:5%
 }
 
 #manifesto article section p b {
@@ -1056,4 +1048,18 @@ footer.grey a:hover {
 
 .events {
     background-image:url(../img/under_construction.png);
+}
+
+.gallery {
+    display:inline-block;
+    float:center;
+    width:10%;
+    line-height:61px;
+    margin:0 0 0 0;
+    padding:0;
+    color:#FFF;
+    font-family:'Lato',sans-serif;
+    font-size:13px;
+    text-align: right;
+    text-transform:uppercase
 }
