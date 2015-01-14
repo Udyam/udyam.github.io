@@ -428,7 +428,7 @@ a img {
     top:0;
     left:0;
     z-index:9989;
-    background:#282828;
+    background:#000d1a;
     overflow:hidden;
     -webkit-backface-visibility:hidden;
     -webkit-transform:translateZ(0);
@@ -466,7 +466,7 @@ a img {
     z-index:1;
     width:100%;
     height:63px;
-    background:#009999;
+    background:#000d1a;
     -webkit-transition-property:width,height,background;
     -webkit-transition-duration:.8s;
     -webkit-transition-timing-function:ease-out;
@@ -745,9 +745,8 @@ a img {
 
 #intro {
     display:block;
-    background: url("img/home-hero-bg-20c8e45c.jpg") no-repeat center center;
-    background-size: cover;
-    position:absolute;
+background-color: #000000;background-image:url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHZlcnNpb249JzEuMScgd2lkdGg9JzQwMCcgaGVpZ2h0PSc0MDAnPgoJPGRlZnMgaWQ9J2RlZnM0Jz4KCQk8ZmlsdGVyIGNvbG9yLWludGVycG9sYXRpb24tZmlsdGVycz0nc1JHQicgaWQ9J2ZpbHRlcjMxMTUnPgoJCQk8ZmVUdXJidWxlbmNlIHR5cGU9J2ZyYWN0YWxOb2lzZScgbnVtT2N0YXZlcz0nMScgYmFzZUZyZXF1ZW5jeT0nMC45JyBpZD0nZmVUdXJidWxlbmNlMzExNycgLz4KCQkJPGZlQ29sb3JNYXRyaXggcmVzdWx0PSdyZXN1bHQ1JyB2YWx1ZXM9JzEgMCAwIDAgMCAwIDEgMCAwIDAgMCAwIDEgMCAwIDAgMCAwIDYgLTQuMTUgJyBpZD0nZmVDb2xvck1hdHJpeDMxMTknIC8+CgkJCTxmZUNvbXBvc2l0ZSBpbjI9J3Jlc3VsdDUnIG9wZXJhdG9yPSdpbicgaW49J1NvdXJjZUdyYXBoaWMnIHJlc3VsdD0ncmVzdWx0NicgaWQ9J2ZlQ29tcG9zaXRlMzEyMScgLz4KCQkJPGZlTW9ycGhvbG9neSBpbj0ncmVzdWx0Nicgb3BlcmF0b3I9J2RpbGF0ZScgcmFkaXVzPSc5JyByZXN1bHQ9J3Jlc3VsdDMnIGlkPSdmZU1vcnBob2xvZ3kzMTIzJyAvPgoJCTwvZmlsdGVyPgoJPC9kZWZzPgoJPHJlY3Qgd2lkdGg9JzEwMCUnIGhlaWdodD0nMTAwJScgeD0nMCcgeT0nMCcgaWQ9J3JlY3QyOTg1JyBmaWxsPScjMDAwMDAwJy8+ICAgICAKCTxyZWN0IHdpZHRoPScxMDAlJyBoZWlnaHQ9JzEwMCUnIHg9JzAnIHk9JzAnIGlkPSdyZWN0Mjk4NScgc3R5bGU9J2ZpbGw6IzYxMTc0ODtmaWx0ZXI6dXJsKCNmaWx0ZXIzMTE1KScgLz4KPC9zdmc+'); position: absolute;
+
     top:0;
     right:0;
     width:100%;
@@ -760,7 +759,7 @@ a img {
     font-family:'Lato',sans-serif
 }
 
-#intro img {
+#udyam {
     display:block;
     width:100%;
     height:87px;
@@ -770,16 +769,15 @@ a img {
     font-size:95px;
     font-weight:300;
     letter-spacing:-7px;
-    align:center;
+    text-align:center;
     -webkit-animation-delay:.5s;
     animation-delay:.5s
 }
 
-.iit {
-    display: inline-block;
+#iit {
     position: absolute;
-    top: 0px;
-    right: 0px
+    top: 5%;
+    right: 5%;
 }
 
 #intro h1 b {
