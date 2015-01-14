@@ -401,203 +401,6 @@ body {
     animation-name:goTop3
 }
 
-#loader {
-    display:block;
-    position:fixed;
-    top:0;
-    right:0;
-    z-index:9990;
-    width:100%;
-    height:100px;
-    min-width:100%;
-    min-height:100%;
-    background:#3bce6b;
-    -webkit-backface-visibility:hidden;
-    -webkit-transform:translateZ(0)
-}
-
-#loader svg {
-    position:absolute;
-    top:50%;
-    left:50%;
-    margin:-75px -55px;
-    width:151px;
-    height:111px
-}
-
-#loader svg .mask {
-    fill:#3BCE6B
-}
-
-#loader svg .path {
-    stroke-dasharray:500;
-    stroke-dashoffset:500;
-    -webkit-animation:dash 2s linear infinite;
-    -moz-animation:dash 2s linear infinite;
-    animation:dash 2s linear infinite;
-    fill:none
-}
-
-@-moz-keyframes dash {
-from {
-    stroke-dashoffset:500
-}
-
-to {
-    stroke-dashoffset:0
-}
-}
-
-@-webkit-keyframes dash {
-from {
-    stroke-dashoffset:500
-}
-
-to {
-    stroke-dashoffset:0
-}
-}
-
-@keyframes dash {
-from {
-    stroke-dashoffset:500
-}
-
-to {
-    stroke-dashoffset:0
-}
-}
-
-.fallback {
-    display:none
-}
-
-.no-svg .fallback {
-    display:block;
-    float:left;
-    width:100%;
-    height:100%;
-    background:url(img/nuvola_big.png) no-repeat bottom right
-}
-
-#loader b {
-    display:block;
-    position:absolute;
-    top:50%;
-    left:50%;
-    margin:15px -50px;
-    width:151px;
-    color:#FFF;
-    font-size:10px;
-    text-align:center;
-    font-family:'Lato',sans-serif;
-    -moz-animation:pulse_animation 1s linear infinite;
-    -webkit-animation:pulse_animation 1s linear infinite;
-    animation:pulse_animation 1s linear infinite
-}
-
-@-moz-keyframes pulse_animation {
-0% {
-    -moz-transform:scale(1)
-}
-
-30% {
-    -moz-transform:scale(1)
-}
-
-40% {
-    -moz-transform:scale(1.08)
-}
-
-50% {
-    -moz-transform:scale(1)
-}
-
-60% {
-    -moz-transform:scale(1)
-}
-
-70% {
-    -moz-transform:scale(1.05)
-}
-
-80% {
-    -moz-transform:scale(1)
-}
-
-100% {
-    -moz-transform:scale(1)
-}
-}
-
-@-webkit-keyframes pulse_animation {
-0% {
-    -webkit-transform:scale(1)
-}
-
-30% {
-    -webkit-transform:scale(1)
-}
-
-40% {
-    -webkit-transform:scale(1.08)
-}
-
-50% {
-    -webkit-transform:scale(1)
-}
-
-60% {
-    -webkit-transform:scale(1)
-}
-
-70% {
-    -webkit-transform:scale(1.05)
-}
-
-80% {
-    -webkit-transform:scale(1)
-}
-
-100% {
-    -webkit-transform:scale(1)
-}
-}
-
-@keyframes pulse_animation {
-0% {
-    transform:scale(1)
-}
-
-30% {
-    transform:scale(1)
-}
-
-40% {
-    transform:scale(1.08)
-}
-
-50% {
-    transform:scale(1)
-}
-
-60% {
-    transform:scale(1)
-}
-
-70% {
-    transform:scale(1.05)
-}
-
-80% {
-    transform:scale(1)
-}
-
-100% {
-    transform:scale(1)
-}
-}
-
 a {
     text-decoration:none
 }
@@ -610,56 +413,6 @@ a img {
     display:block;
     width:950px;
     margin:0 auto
-}
-
-#login {
-    display:block;
-    height:29px;
-    line-height:29px;
-    font-family:'Lato',sans-serif;
-    font-size:10px;
-    text-align:left;
-    letter-spacing:0;
-    font-weight:300;
-    position:fixed;
-    top:25px;
-    right:30px;
-    z-index:9989;
-    -webkit-backface-visibility:hidden;
-    -webkit-transform:translateZ(0)
-}
-
-#login a,#login b {
-    font-weight:400;
-    cursor:pointer
-}
-
-#login a:hover,#login b:hover,#loginBlack a:hover,#loginBlack b:hover {
-    text-decoration:underline
-}
-
-#login span {
-    display:block;
-    float:left;
-    width:29px;
-    height:29px;
-    margin:0 9px 0 0
-}
-
-.whiteL a,.whiteL b,.whiteL {
-    color:#FFF
-}
-
-.blackL a,.blackL b,.blackL {
-    color:#313131
-}
-
-.whiteL span {
-    background:url(img/icon.png) no-repeat -49px -122px
-}
-
-.blackL span {
-    background:url(img/icon.png) no-repeat -0 -145px
 }
 
 #nav {
@@ -872,6 +625,23 @@ a img {
 
 #link5:hover span {
     background-position:-126px -61px
+}
+
+
+.whiteL a,.whiteL b,.whiteL {
+    color:#FFF
+}
+
+.blackL a,.blackL b,.blackL {
+    color:#313131
+}
+
+.whiteL span {
+    background:url(img/icon.png) no-repeat -49px -122px
+}
+
+.blackL span {
+    background:url(img/icon.png) no-repeat -0 -145px
 }
 
 #minisocial {
