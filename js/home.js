@@ -8,9 +8,8 @@ function resizeTop() {
     return false
 }
 
-var video, timer;
+var timer;
 window.onload = function() {
-    video = $("#video_background");
     $("#intro .udyam, #intro .iit, #intro .line, #intro p,#intro .buttonbox").css({
         opacity: "0"
     });
@@ -23,20 +22,3 @@ window.onload = function() {
 window.onresize = function() {
     resizeTop();
 };
-
-jQuery(document).ready(function() {
-    resizeTop();
-    $("#mission").children().css({
-        opacity: "0"
-    });
-    $("#mission,#sponsors h2,#nuvTM,#sponsors .sponsors-block div span,#sponsors .sponsors-block div p,#sponsors .sponsors-block div img,#sponsors a").css({
-        opacity: "0"
-    });
-    video = $("#video_background");
-    $("#sponsors").waypoint(function(e) {
-        if (e === "down") {
-            $(this).find("h2,#nuvTM,.sponsors-block div img, a").addClass("animated goTop");
-            $(this).find(".sponsors-block div span,.sponsors-block div p").addClass("animated goTop2")
-        }
-    });
-})

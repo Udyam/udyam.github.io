@@ -1544,3 +1544,100 @@ footer a {
 footer a:hover {
     color:#656565
 }
+
+
+
+.gallery {
+    display:inline-block;
+    float:center;
+    width:10%;
+    line-height:61px;
+    margin:0 0 0 0;
+    padding:0;
+    color:#FFF;
+    font-family:'Lato',sans-serif;
+    font-size:13px;
+    text-align: right;
+    text-transform:uppercase
+}
+
+.fond{position:fixed;padding-top:85px;top:0;left:0; right:0;bottom:0;
+  background-color:#e74c3c;}
+*
+{
+   font-family:'Roboto';
+  -webkit-transition:all 0.3s linear;
+  -moz-transition:all 0.3s linear;
+  -o-transition:all 0.3s linear;
+  transition:all 0.3s linear;
+}
+.conteneur_responsive
+{
+  width:825px;
+}
+.conteneur_responsive > div
+{
+  position: relative;
+  box-shadow: 1px 1px 4px #53110a;
+  display: inline-block;
+  vertical-align: top;
+  background-color: #ffffff;
+  width: 30%;
+  height: 630px;
+  margin: 5px;
+}
+.prequelle
+{
+  color: #ffffff;
+  font-weight: 100;
+  font-size: 40px;
+  padding:80px;
+}
+.gene_text
+{
+  text-align: center;
+  color: #999999;
+  padding: 15px;
+  font-weight: 300;
+  font-size: 14px;
+
+}.btn
+{
+  padding: 15px;
+  color: #ffffff;
+  margin:15px;
+  position: absolute;
+  bottom: 0px; width:76%;
+  font-weight: 300;
+  font-size: 16px;
+}
+@media screen and (max-width: 900px)
+{
+  .conteneur_responsive
+  {
+    width:610px;
+  }
+  .conteneur_responsive > div
+  {
+    background-color: #ffffff;
+    display: inline-block;
+    width: 100%;
+    height:auto;
+  }
+  .prequelle
+  {
+    color: #ffffff;
+    font-weight: 100;
+    font-size: 40px;
+    padding:40px;
+  }
+  .btn
+  {
+    padding: 15px;
+    color: #ffffff;
+    margin:15px;
+    position: absolute;
+    bottom: 0px; width:90%;
+    font-weight: 300;
+    font-size: 16px;
+  }
