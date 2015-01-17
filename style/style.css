@@ -843,7 +843,7 @@ background-color: #000000;background-image:url('data:image/svg+xml;base64,PHN2Zy
     animation-delay:.8s
 }
 
-#mission p {
+`#mission p {
     display:block;
     float:left;
     clear:both;
