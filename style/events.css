@@ -1,26 +1,43 @@
+@import url("http://fonts.googleapis.com/css?family=Lato");
+
+$background: #9b59b6;
+$tabs-base-color: #8e44ad;
+
+* {
+  margin: 0;
+  padding: 0;
+  @include box-sizing(border-box);
+}
+
 .tabs input[type=radio] {
-  position: relative;
+  position: absolute;
   top: -9999px;
   left: -9999px;
 }
 .tabs {
-width: 650px;
+min-width: 100%;
+width: 750px;
 float: none;
 list-style: none;
 position: relative;
-padding: 0;
+padding: 0px 0px 10px;
 margin: 75px auto;
+overflow-y: visible;
 }
+
 .tabs li{
 float: left;
 }
+
 .tabs label {
-  display: block;
+  min-width: 100%;
+  display: inline-block;
   padding: 10px 20px;
   border-radius: 2px 2px 0 0;
-  color: #08C;
+  color: #693B8D;
   font-size: 24px;
   font-weight: normal;
+  font-family: 'Roboto', helveti;
   background: rgba(255,255,255,0.2);
   cursor: pointer;
   position: relative;
@@ -36,12 +53,12 @@ top: 0;
 }
 
 [id^=tab]:checked + label {
-background: #08C;
+background: #693B8D;
 color: white;
 top: 0;
 }
 
-[id^=tab]:checked ~ [id^=tab-content] {
+[id^=tab]:checked ~ [id^=tab-content], [id^=tab]:checked ~ [id^=tab-content] > div {
   display: block;
 }
 .tab-content{
@@ -52,15 +69,43 @@ width: 100%;
 font-size: 20px;
 line-height: 140%;
 padding-top: 10px;
-background: #08C;
+background: #693B8D;
 padding: 15px;
 color: white;
 position: absolute;
 top: 53px;
 left: 0;
-box-sizing: border-box;
+min-height:100%;
+overflow:auto;
+}
+
+.tab-content > div{
+display: block;
+min-height: 100%;
+min-width: 100%;
+overflow-x: visible;
+position: relative;
+white-space: normal;
 -webkit-animation-duration: 0.5s;
 -o-animation-duration: 0.5s;
 -moz-animation-duration: 0.5s;
 animation-duration: 0.5s;
+}
+
+.tab-content > p {
+position: relative;
+min-height: 100%;
+white-space: normal;
+}
+
+.tab-content li{
+    display:table-row;
+    white-space:pre;
+}
+
+.modal {
+    position: absolute;
+    min-width: 75%;
+    min-height:100%;
+    overflow: visible;
 }
