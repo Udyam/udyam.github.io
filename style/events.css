@@ -25,7 +25,7 @@ margin: 75px auto;
 overflow-y: visible;
 }
 
-.tabs li{
+.tabs > li{
 float: left;
 }
 
@@ -37,7 +37,6 @@ float: left;
   color: #693B8D;
   font-size: 24px;
   font-weight: normal;
-  font-family: 'Roboto', helveti;
   background: rgba(255,255,255,0.2);
   cursor: pointer;
   position: relative;
@@ -62,16 +61,14 @@ top: 0;
   display: block;
 }
 .tab-content{
-z-index: 2;
+z-index:2;
 display: none;
 text-align: left;
 width: 100%;
 font-size: 20px;
 line-height: 140%;
 padding-top: 10px;
-background: #693B8D;
 padding: 15px;
-color: white;
 position: absolute;
 top: 53px;
 left: 0;
@@ -80,7 +77,7 @@ overflow:auto;
 }
 
 .tab-content > div{
-display: block;
+display: none;
 min-height: 100%;
 min-width: 100%;
 overflow-x: visible;
@@ -94,18 +91,29 @@ animation-duration: 0.5s;
 
 .tab-content > p {
 position: relative;
-min-height: 100%;
+word-wrap:normal;
+font-weight: lighter;
+width:950px;
+min-width: 100%;
+min-height: 200%;
 white-space: normal;
 }
 
-.tab-content li{
-    display:table-row;
-    white-space:pre;
+.tab-content ul > li {
+word-wrap:normal;
+min-height: 100%;
+min-width: 100%;
+line-height: 150%;
+white-space: normal;
+}
+
+.tab-content > div > ol > li{
+    list-style:disc;
 }
 
 .modal {
     position: absolute;
-    min-width: 75%;
-    min-height:100%;
+    min-width: 85%;
+    min-height:120%;
     overflow: visible;
 }
