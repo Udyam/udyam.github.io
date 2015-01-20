@@ -107,10 +107,6 @@ line-height: 150%;
 white-space: normal;
 }
 
-.tab-content > div > ol > li{
-    list-style:disc;
-}
-
 .modal {
     position: absolute;
     min-width: 85%;
