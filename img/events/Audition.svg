@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="841.89px" height="595.28px" viewBox="0 0 841.89 595.28" enable-background="new 0 0 841.89 595.28" xml:space="preserve">
+<g>
+	<g>
+		<g opacity="0.81">
+			<g>
+				<defs>
+					<rect id="SVGID_1_" x="247" y="174.28" width="299.985" height="239.816"/>
+				</defs>
+				<clipPath id="SVGID_2_">
+					<use xlink:href="#SVGID_1_"  overflow="visible"/>
+				</clipPath>
+				<polyline clip-path="url(#SVGID_2_)" fill="none" stroke="#647DB4" stroke-width="14" stroke-miterlimit="10" points="
+					247,294.188 312.214,294.188 326.024,266.568 339.834,321.808 362.084,234.345 387.403,377.048 406.583,211.328 				"/>
+				<polyline clip-path="url(#SVGID_2_)" fill="none" stroke="#647DB4" stroke-width="14" stroke-miterlimit="10" points="
+					546.985,294.188 481.771,294.188 467.96,321.808 454.15,266.568 431.902,354.031 406.583,211.328 387.403,377.048 				"/>
+			</g>
+		</g>
+	</g>
+</g>
+<rect x="247" y="146.28" fill="none" width="300" height="300"/>
+</svg>
