@@ -105,6 +105,9 @@
 	<script>
         $(document).ready(function(){
             $('.card').addClass('animated bounceIn');
+            $('.card').each(function() {
+                animationHover(this, 'bounce');
+            });
         });
     </script>
 </body>
