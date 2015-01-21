@@ -11,6 +11,7 @@
 	<link rel="stylesheet" href="style/materialize.min.css" media="screen" type="text/css" />
 	<link rel="stylesheet" href="style/page.css" media="screen" type="text/css" />
     <link rel="stylesheet" href="style/events.css" media="screen" type="text/css" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.2.0/animate.min.css" rel="stylesheet" media="all" type="text/css" />
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
 	<link rel="icon" href="favicon.ico" type="image/x-icon" />
 </head>
@@ -36,7 +37,7 @@
     </div>
     <div class="row">
         <div class="col s12 m6 l3">
-            <div class="card teal darken-2 z-depth-4">
+            <div class="card teal darken-2 z-depth-4 row1">
                 <a class="modal-trigger" href="#mosaic">
                 <div class="card-image waves-effect waves-block waves-light">
                   <img src="img/events/mosaic.png">
@@ -48,7 +49,7 @@
             </div>
         </div>
         <div class="col s12 m6 l3">
-            <div class="card teal darken-2 z-depth-4">
+            <div class="card teal darken-2 z-depth-4 row1">
                 <a class="modal-trigger" href="#ichip">
                 <div class="card-image waves-effect waves-block waves-light">
                   <img src="img/events/ichip.png">
@@ -60,7 +61,7 @@
             </div>
         </div>
         <div class="col s12 m6 l3">
-            <div class="card teal darken-2 z-depth-4">
+            <div class="card teal darken-2 z-depth-4 row1">
                 <a class="modal-trigger" href="#auditron">
                 <div class="card-image waves-effect waves-block waves-light">
                   <img src="img/events/Audition.svg">
@@ -72,7 +73,7 @@
             </div>
         </div>
         <div class="col s12 m6 l3">
-            <div class="card teal darken-2 z-depth-4">
+            <div class="card teal darken-2 z-depth-4 row1">
                 <a class="modal-trigger" href="#commnet">
                 <div class="card-image waves-effect waves-block waves-light">
                   <img src="img/events/Comnet.svg">
@@ -83,10 +84,10 @@
                 </div>
             </div>
         </div>
-       </div>
+    </div>
     <div class="row">
         <div class="col s12 m6 l3">
-            <div class="card teal darken-2 z-depth-4">
+            <div class="card teal darken-2 z-depth-4 row2">
                 <a class="modal-trigger" href="#krypto">
                 <div class="card-image waves-effect waves-block waves-light">
                   <img src="img/events/krypto.svg">
@@ -98,7 +99,7 @@
             </div>
         </div>
         <div class="col s12 m6 l3">
-            <div class="card teal darken-2 z-depth-4">
+            <div class="card teal darken-2 z-depth-4 row2">
                 <a class="modal-trigger" href="#code42day">
                 <div class="card-image waves-effect waves-block waves-light">
                   <img src="img/events/code.svg">
@@ -110,7 +111,7 @@
             </div>
         </div>
         <div class="col s12 m6 l3">
-            <div class="card teal darken-2 z-depth-4">
+            <div class="card teal darken-2 z-depth-4 row2">
                 <a class="modal-trigger" href="#digism">
                 <div class="card-image waves-effect waves-block waves-light">
                   <img src="img/events/Digital.svg">
@@ -122,7 +123,7 @@
             </div>
         </div>
         <div class="col s12 m6 l3">
-            <div class="card teal darken-2 z-depth-4">
+            <div class="card teal darken-2 z-depth-4 row2">
                 <a class="modal-trigger" href="#funckit">
                 <div class="card-image waves-effect waves-block waves-light">
                   <img src="img/events/funckit.jpg">
@@ -513,7 +514,9 @@ International Flight prefers gate 3,if gate 3 is not empty international flight 
             in_duration: 150, // Transition in duration
             out_duration: 150, // Transition out duration
             }
-        ).getElementsByName("tabs").click();
+        );
+        $('.row1').addClass('animated bounceInDown');
+        $('.row2').addClass('animated bounceInUp');
         });
     </script>
 </body>
