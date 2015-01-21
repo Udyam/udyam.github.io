@@ -9,6 +9,7 @@
 	<link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="style/materialize.min.css" type="text/css" />
 	<link rel="stylesheet" href="style/page.css" media="screen" type="text/css" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.2.0/animate.min.css" rel="stylesheet" media="all" type="text/css" />
 	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
 	<link rel="icon" href="favicon.ico" type="image/x-icon" />
 
@@ -31,11 +32,11 @@
 	</header>
 	<div id="manifesto">
 		<article>
-			<header>
+			<header id="header">
 				<h1>Udyam 2015 <br />IIT(BHU), Varanasi</h1>
 				<h2>Join us for three days of extreme fun and learning!</h2>
 			</header>
-			<section>
+			<section id="about">
                 <p>This fest is the annual techno-management fest of the Department of Electronics Engineering. It is organized by the <b>Electronics Engineering Society (EES), IIT (BHU)</b>. This fest covers the events ranging from programming to hardware to management. The main motive of the fest is to construct a bridge which can connect our classroom theory and the industrial application, and can give us the opportunity to apply, practically, our knowledge which we have gained through books and in classroom.</p>
 			</section>
         </article>
@@ -43,5 +44,11 @@
 	</div>
 	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 	<script>!window.jQuery && document.write('<script src="lib/jQuery/jquery-1.9.0.min.js"><\/script>');</script>
+	<script>
+        $(document).ready(function(){
+            $('#header').addClass('animated zoomIn');
+            $('#about').addClass('animated rubberBand');
+            });
+    </script>
 </body>
 </html>

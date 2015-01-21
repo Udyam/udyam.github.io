@@ -32,7 +32,7 @@
 	</header>
   <section id="workshops">
    <div class="container">
-    <div class="row">
+    <div class="row" id="header">
         <h1>Workshops</h1>
     </div>
     <div class="row">
@@ -108,6 +108,7 @@
             $('.card').each(function() {
                 animationHover(this, 'bounce');
             });
+            $('#header').addClass('animated zoomIn');
         });
     </script>
 </body>

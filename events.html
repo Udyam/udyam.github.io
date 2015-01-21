@@ -32,7 +32,7 @@
         </nav>
 	</header>
    <div class="container">
-    <div class="row">
+    <div class="row" id="header">
         <h1>Events</h1>
     </div>
     <div class="row">
@@ -507,6 +507,7 @@ International Flight prefers gate 3,if gate 3 is not empty international flight 
 	<script src="js/materialize.min.js"></script>
 	<script>
         $(document).ready(function(){
+        $('#header').addClass('animated zoomIn');
         $('.modal-trigger').leanModal(
             {
             dismissible: true, // Modal can be dismissed by clicking outside of the modal
