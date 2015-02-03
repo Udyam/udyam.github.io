@@ -10,12 +10,12 @@ function resizeTop() {
 
 var timer;
 window.onload = function() {
-    $("#intro .udyam, #intro .iit, #intro .line, #intro p,#intro .buttonbox").css({
+    $("#intro .udyam, #intro .iit, #intro .line, #intro h2,#intro h1,#intro .buttonbox").css({
         opacity: "0"
     });
     setTimeout(function() {
         $("#loader").fadeOut("slow");
-        $("#intro .udyam, #intro .iit, #intro .line, #intro p,#intro .buttonbox").addClass("animated goTop3")
+        $("#intro .udyam, #intro .iit, #intro .line, #intro h2,#intro h1, #intro .buttonbox").addClass("animated goTop3")
     }, 500);
     resizeTop();
 };

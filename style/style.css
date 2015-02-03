@@ -566,16 +566,29 @@ a img {
     animation-delay:.6s
 }
 
-#intro p {
+#intro h1 {
     display:inline-block;
-    width:34%;
-    line-height:20px;
+    width:60%;
     position:absolute;
     top:45%;
-    margin:160px 33% 0;
+    margin:160px 20% 0;
     color:#FFF;
     font-family:'Lato',sans-serif;
-    font-size:15px;
+    font-size:22px;
+    text-align:left;
+    -webkit-animation-delay:.8s;
+    animation-delay:.8s
+}
+
+#intro h2 {
+    display:inline-block;
+    width:34%;
+    position:absolute;
+    top:60%;
+    margin:220px 33% 0;
+    color:#FFF;
+    font-family:'Lato',sans-serif;
+    font-size:30px;
     text-align:center;
     -webkit-animation-delay:.8s;
     animation-delay:.8s
