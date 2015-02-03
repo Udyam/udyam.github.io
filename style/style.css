@@ -567,7 +567,7 @@ a img {
 }
 
 #intro p {
-    display:block;
+    display:inline-block;
     width:34%;
     line-height:20px;
     position:absolute;
