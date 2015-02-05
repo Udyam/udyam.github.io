@@ -187,64 +187,16 @@ body {
     float:right;
     width:63px;
     height:61px;
-    background-image:url(img/icon.png);
-    background-repeat:no-repeat;
     padding:0;
     margin:0 0 0 10px
 }
 
-#link1 span {
-    background-position:0 0
+#nav nav ul span i{
+    text-align: center;
+    margin-right: 12px;
+    margin-top: 8px;
 }
 
-#link2 span {
-    background-position:-63px 0
-}
-
-#link3 span {
-    background-position:-126px 0
-}
-
-#link4 span {
-    background-position:-189px 0
-}
-
-#link5 span {
-    background-position:-63px -61px
-}
-
-#nav nav ul li:hover {
-    background:#009999
-}
-
-#nav nav ul .black:hover {
-    background:#009999
-}
-
-#link4:hover span {
-    background-position:-189px -61px
-}
-
-#link5:hover span {
-    background-position:-126px -61px
-}
-
-
-.whiteL a,.whiteL b,.whiteL {
-    color:#FFF
-}
-
-.blackL a,.blackL b,.blackL {
-    color:#FFF
-}
-
-.whiteL span {
-    background:url(img/icon.png) no-repeat -49px -122px
-}
-
-.blackL span {
-    background:url(img/icon.png) no-repeat -0 -145px
-}
 
 #nav:hover {
     width:232px;
