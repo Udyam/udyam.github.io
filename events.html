@@ -310,8 +310,7 @@
                     <input type="radio" name="tabs" id="tab9" checked />
                     <label for="tab9">Problem Statement</label>
                     <div  id="tab-content9" class="tab-content">
-                      <p>Implement a Word Recognition System, a system that can recognise the words you speak. First you need to train the system with your own voice’s datasets and then make it capable of detecting the words.
-</p>
+                      <p>Implement a Dual-Tone Multi-Frequency (DTMF) decoder that can extract the message from given audio file.</p>
                     </div>
                 </li>
 
@@ -319,18 +318,22 @@
                     <input type="radio" name="tabs" id="tab10" />
                     <label for="tab10">Event Structure</label>
                     <div id="tab-content10" class="tab-content">
-                      <p>As implementation involves certain steps on this basis we will have 2 rounds : </p>
-                      <ol>
-                        <li>&#9679; Need to complete missing modules.</li>
-                        <li>&#9679; Implement a complete word recognition system.</li>
-                      </ol>
+                     <ul>
+                        <li>&#9679; Each team can have atmost 2 members.</li>
+                        <li>&#9679; There will be 2 rounds:
+                            <ol>
+                                <li>--> Round 1: Implement a DTMF decoder that can extract uniformly separated numbers ( 1-9 ).</li>
+                                <li>--> Round 2: First denoise the given audio signal then decode it using DTMF decoder in parallel discarding undesired frequencies to get message that contains both numbers and alphabets( 0-9 and a-z ).</li>
+                            </ol>
+                     </ul>
                     </div>
                 </li>
                 <li>
                     <input type="radio" name="tabs" id="tab11" />
                     <label for="tab11">Criteria</label>
                     <div id="tab-content11" class="tab-content">
-                      <p> Coming soon...</p>
+                      <p>The implementation must satisfy all the above conditions.<br>
+                        Each round will have different scoring levels.</p>
                     </div>
                 </li>
                 <li>
