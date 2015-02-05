@@ -178,6 +178,14 @@
     margin-top: 8px;
 }
 
+#nav nav ul li:hover {
+    background:#009999
+}
+
+#nav nav ul .black:hover {
+    background:#009999
+}
+
 #nav:hover {
     width:232px;
     -moz-transition-delay:.8s;
