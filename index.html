@@ -44,12 +44,26 @@
 	</div>
 	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
     <script src='js/materialize.min.js'></script>
+    <script type="text/javascript" src="js/jquery.noty.packaged.min.js"></script>
     <script>
         $(document).ready(function(){
             $('#iit').addClass('animated fadeIn');
             $('#udyam').addClass('animated zoomIn');
             $('h1').addClass('animated bounceInRight');
             $('h2').addClass('animated bounceInLeft');
+
+            var n = noty({
+                text: 'Event registrations opening soon! Stay tuned..',
+                theme: 'udyam',
+                template: '<div class="udyam noty_message"><span class="noty_text"></span><div class="noty_close"></div></div>',
+                animation: {
+                    open: 'animated bounceInLeft', // Animate.css class names
+                    close: 'animated bounceOutLeft', // Animate.css class names
+                    easing: 'swing', // unavailable - no need
+                    speed: 500 // unavailable - no need
+                }
+            });
+
         });
     </script>
     <script>
