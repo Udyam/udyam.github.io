@@ -236,8 +236,8 @@
 
 #intro {
     display:block;
-    background-image: url(../img/events/mosaic4.jpg);
-    background-size: cover;
+    background-image: url(../img/backgrd2.jpg);
+    background-size:cover;
     position: absolute;
     width:100%;
     min-height:100%;
@@ -255,19 +255,18 @@
 #iit {
     position: absolute;
     top: 15%;
-    right: 5%;
+    right: 8%;
 }
 
 #intro h1 {
     display:block;
     width:68%;
     position:absolute;
-    top:30%;
+    top:27%;
     margin:120px 20% 0;
     color:#FFF;
-    font-style: italic;
     font-family: 'Nova Mono';
-    font-size:20px;
+    font-size:22px;
 }
 
 #intro h2 {

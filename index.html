@@ -42,7 +42,7 @@
         </nav>
 	</header>
 	<div id="intro">
-	    <img src="img/iitbhu_logo1.svg" width="175" height="175" id="iit" />
+	    <img src="img/iitbhu_logo.png" width="175" height="175" id="iit" />
 		<img src="img/official_logo.svg" id="udyam" />
 		<h1>Techno-management fest, Department of Electronics Engineering, IITBHU.</h1>
 		<h2> 27<sup>th</sup> - 29<sup>th</sup> March</h2>
@@ -58,19 +58,7 @@
     <script type="text/javascript" src="js/jquery.noty.packaged.min.js"></script>
     <script>
         NProgress.start();
-        window.onload = function() {
-
-                NProgress.done();
-                $('body').addClass('loaded');
-            };
-        // FILL PROGRESS BARS
-        function fillBars() {
-            $('.bar').each(function() {
-                 var bar = $(this);
-                 bar.find('.progress').css('width', bar.attr('data-percent') + '%' );
-                });
-        }
-        // --
+                // --
         // AJAX LOADER
         function showLoader() {
             NProgress.start();
@@ -85,7 +73,8 @@
             $('#udyam').addClass('animated zoomIn');
             $('h1').addClass('animated bounceInRight');
             $('h2').addClass('animated bounceInLeft');
-
+            NProgress.done();
+            $('body').addClass('loaded');
             var n = noty({
                 layout: 'topRight',
                 text: 'Event registrations are now open!',
