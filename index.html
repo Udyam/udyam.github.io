@@ -10,12 +10,21 @@
 	<link rel="stylesheet" href="style/style.css" media="screen" type="text/css" />
 	<link rel="stylesheet" href="style/materialize.min.css" type="text/css" />
     <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.2.0/animate.min.css" rel="stylesheet" media="all" type="text/css" />
+    <link href="style/nprogress.css" type="text/css" />
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
 	<link rel="icon" href="favicon.ico" type="image/x-icon" />
 
 </head>
 <body>
+   <div id="loader-wrapper">
+    <div id="loader"></div>
+
+    <div class="loader-section section-left"></div>
+    <div class="loader-section section-right"></div>
+
+    </div>
+
     <header id="nav">
 		<div id="top"><a href="/" title="Udyam 2015">
 			<img id="logo" src="img/logo.svg" alt="" title="Udyam" />
@@ -44,6 +53,7 @@
 	</div>
 	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
     <script src='js/materialize.min.js'></script>
+    <script src="js/nprogress.js"></script>
     <script type="text/javascript" src="js/jquery.noty.packaged.min.js"></script>
     <script>
         $(document).ready(function(){
@@ -54,7 +64,19 @@
 
             var n = noty({
                 layout: 'topRight',
-                text: 'Event registrations are now open!<br> Problem statements updated for Muse!',
+                text: 'Event registrations are now open!',
+                theme: 'udyam',
+                template: '<div class="udyam noty_message"><span class="noty_text"></span><div class="noty_close"></div></div>',
+                animation: {
+                    open: 'animated bounceInLeft', // Animate.css class names
+                    close: 'animated bounceOutLeft', // Animate.css class names
+                    easing: 'swing', // unavailable - no need
+                    speed: 500 // unavailable - no need
+                }
+            });
+            var z = noty({
+                layout: 'topRight',
+                text: 'Updated Problem statements! :Muse and Ignite',
                 theme: 'udyam',
                 template: '<div class="udyam noty_message"><span class="noty_text"></span><div class="noty_close"></div></div>',
                 animation: {

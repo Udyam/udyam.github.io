@@ -110,6 +110,6 @@ white-space: normal;
 .modal {
     position: absolute;
     min-width: 85%;
-    min-height:140%;
+    min-height:150%;
     overflow: visible;
 }
