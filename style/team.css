@@ -1,4 +1,7 @@
-/*Global page intro*/
-.page-intro {
-    padding:144px 0
+body {
+    position:relative;
+    background-size: cover;
+    background-color: #f87f73;
+    background-image: -webkit-linear-gradient( -0deg, #f87f73 0%, #f87f73 82%, #292423 82%, #292423 82%);
+    background-image: linear-gradient( 0deg, #f87f73 0%, #f87f73 82%, #292423 82%, #292423 82%);
 }

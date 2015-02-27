@@ -1,12 +1,11 @@
-@import url("http://fonts.googleapis.com/css?family=Lato");
+@import url(http://fonts.googleapis.com/css?family=Roboto:400italic,700italic,400);
 
-$background: #9b59b6;
-$tabs-base-color: #8e44ad;
 
-* {
-  margin: 0;
-  padding: 0;
-  @include box-sizing(border-box);
+body{
+    position: relative;
+    background-color: #f87f73;
+    background-image: -webkit-linear-gradient( -28deg, #f87f73 0%, #f87f73 86%, #292423 86%, #292423 86%);
+    background-image: linear-gradient( -22deg, #f87f73 0%, #f87f73 86%, #292423 86%, #292423 86%);
 }
 
 .tabs input[type=radio] {
@@ -108,6 +107,7 @@ white-space: normal;
 }
 
 .modal {
+    color: #000;
     position: absolute;
     min-width: 85%;
     min-height:150%;
