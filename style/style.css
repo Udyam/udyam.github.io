@@ -284,6 +284,13 @@
   left: 60%;
 }
 
+#button2 {
+  position: absolute;
+  text-align: center;
+  bottom: 10%;
+  left: 45%;
+}
+
 .udyam {
     overflow: hidden;
     border: 1px solid #fff;
