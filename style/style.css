@@ -234,10 +234,11 @@
 
 #udyam {
     display:block;
-    width:100%;
-    height:20%;
+    width:800px;
+    height:150px;
     position:absolute;
-    top:20%;
+    top:15%;
+    left:15%;
     text-align:center;
 }
 
@@ -256,6 +257,7 @@
     color:#FFF;
     font-family: 'Nova Mono';
     font-size:22px;
+    text-align:center;
 }
 
 #intro h2 {
