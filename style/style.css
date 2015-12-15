@@ -234,10 +234,11 @@
 
 #udyam {
     display:block;
-    width:100%;
+    width:40%;
     height:20%;
     position:absolute;
     top:20%;
+    left:30%;
     text-align:center;
 }
 
