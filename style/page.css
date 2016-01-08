@@ -245,9 +245,9 @@ html {
     margin:0;
     padding:0;
     background-size: cover;
-    background-color: #f87f73;
-    background-image: -webkit-linear-gradient( -0deg, #ffcdd2 0%, #ffcdd2 82%, #292423 82%, #292423 82%);
-    background-image: linear-gradient( 0deg, #ffcdd2 0%, #ffcdd2 82%, #292423 82%, #292423 82%);
+    background-color: #bbdefb;
+    background-image: -webkit-linear-gradient( -0deg, #bbdefb 0%, #9adeff 82%, #292423 82%, #292423 82%);
+    background-image: linear-gradient( 0deg, #bbdefb 0%, #bbdefb 82%, #292423 82%, #292423 82%);
 }
 
 #manifesto article {

@@ -3,9 +3,9 @@
 
 body{
     position: relative;
-    background-color: #f87f73;
-    background-image: -webkit-linear-gradient( -0deg, #ffcdd2 0%, #ffcdd2 89%, #292423 89%, #292423 89%);
-    background-image: linear-gradient( 0deg, #ffcdd2 0%, #ffcdd2 89%, #292423 89%, #292423 89%);
+    background-color: #bbdefb;
+    background-image: -webkit-linear-gradient( -0deg, #bbdefb 0%, #9adeff 89%, #292423 89%, #292423 89%);
+    background-image: linear-gradient( 0deg, #bbdefb 0%, #9adeff 89%, #292423 89%, #292423 89%);
 }
 
 .tabs input[type=radio] {
