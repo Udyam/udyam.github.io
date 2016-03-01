@@ -1,0 +1,194 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script type="text/javascript">
+//<![CDATA[
+try{if (!window.CloudFlare) {var CloudFlare=[{verbose:0,p:0,byc:0,owlid:"cf",bag2:1,mirage2:0,oracle:0,paths:{cloudflare:"/cdn-cgi/nexp/dok3v=1613a3a185/"},atok:"35559c5a1125e8a9d50136e7f188fea8",petok:"0f5ba8844f82d81e31e58fbe717114f41cc7af85-1456840191-1800",zone:"udyamfest.org",rocket:"0",apps:{"abetterbrowser":{"ie":"10","opera":null,"chrome":null,"safari":null,"firefox":null}},sha2test:0}];!function(a,b){a=document.createElement("script"),b=document.getElementsByTagName("script")[0],a.async=!0,a.src="//ajax.cloudflare.com/cdn-cgi/nexp/dok3v=fb690a32f5/cloudflare.min.js",b.parentNode.insertBefore(a,b)}()}}catch(e){};
+//]]>
+</script>
+<link rel="stylesheet" href="static/css/reset.css">  
+<link rel="stylesheet" href="static/css/style.css">  
+<script src="static/js/modernizr.js"></script>  
+<title>Digisim</title>
+</head>
+<body><script type="text/javascript">
+//<![CDATA[
+try{(function(a){var b="http://",c="udyamfest.org",d="/cdn-cgi/cl/",e="img.gif",f=new a;f.src=[b,c,d,e].join("")})(Image)}catch(e){}
+//]]>
+</script>
+<div class="cd-fold-content single-page" id="main_page">
+<h2>Introduction</h2>
+<p style=" text-align: left">Digisim basically stands for digital simulation.
+And digital simulation in layman terms can be expressed
+as the running of a digital system’s model. Digisim, is
+therefore a platform to explore and gain new insights into
+technology and to estimate the performance of systems
+without going into analytical solutions. Digisim is an event
+where participants have to simulate complex digital
+circuits. Participants will learn advanced circuit design and
+simulation.
+</p>
+<h2>
+Problem Statement:
+</h2>
+<p style=" text-align: left">
+Fascinated by contemporary processors like i7, i5 ,i3 etc. and want to explore their internal architecture ??<br>
+If yes , then Digisim is the event for you.<br>
+<b>Participants will implement a subset of MIPS architecture (8 bit) with limited number of instructions in proteus.<br>
+MIPS(Microprocessor Without Interlocked Pipeline Stage) is a reduced instruction set computer architecture primarily used in embedded systems such as routers , video games like PSP, PS2 etc.</b><br><br>
+<b>Instruction set is as follows</b><br></p>
+<p align="center"><b> I Type instruction</b></p>
+<div style="color: black">
+<table class="table">
+<thead>
+<tr>
+<th>Command</th>
+<th>Op-code</th>
+<th>R<sub>s</sub></th>
+<th>D<sub>s</sub></th>
+<th>Imm. Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Beq r<sub>1</sub>, r<sub>3</sub>, immediate</td>
+<td>0010</td>
+<td>001</td>
+<td>011</td>
+<td>immediate</td>
+</tr>
+<tr>
+<td>Addi r<sub>3</sub>, r<sub>4</sub>, immediate</td>
+<td>0001</td>
+<td>100</td>
+<td>011</td>
+<td>immediate</td>
+</tr>
+<tr>
+<td>Bneq r<sub>1</sub>, r<sub>4</sub>, immediate</td>
+<td>0011</td>
+<td>001</td>
+<td>100</td>
+<td>immediate</td>
+</tr><tr>
+<td>Sw im(r<sub>2</sub>), r<sub>1</sub>, immediate</td>
+<td>0100</td>
+<td>010</td>
+<td>001</td>
+<td>immediate</td>
+</tr><tr>
+<td>lw r<sub>1</sub>, im(r<sub>2</sub>), immediate</td>
+<td>0101</td>
+<td>010</td>
+<td>001</td>
+<td>immediate</td>
+</tr>
+</tbody>
+</table>
+</div><p align="center"><b> R Type instruction</b></p>
+<div style="color: black">
+<table class="table">
+<thead>
+<tr>
+<th>Command</th>
+<th>Op-code</th>
+<th>R<sub>s1</sub></th>
+<th>R<sub>s2</sub></th>
+<th>D<sub>s</sub></th>
+<th>Func-code</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Sub r<sub>1</sub>, r<sub>4</sub>, r<sub>5</sub></td>
+<td>0000</td>
+<td>100</td>
+<td>101</td>
+<td>001</td>
+<td>001</td>
+</tr>
+<tr>
+<td>Add r<sub>1</sub>, r<sub>3</sub>, r<sub>6</sub></td>
+<td>0000</td>
+<td>011</td>
+<td>110</td>
+<td>001</td>
+<td>010</td>
+</tr>
+<tr>
+<td>Or r<sub>1</sub>, r<sub>4</sub>, r<sub>5</sub></td>
+<td>0000</td>
+<td>101</td>
+<td>111</td>
+<td>010</td>
+<td>011</td>
+</tr><tr>
+<td>Slt r<sub>1</sub>, r<sub>4</sub>, r<sub>5</sub></td>
+<td>0000</td>
+<td>010</td>
+<td>011</td>
+<td>001</td>
+<td>101</td>
+</tr><tr>
+<td>Xor r<sub>1</sub>, r<sub>4</sub>, r<sub>5</sub></td>
+<td>0000</td>
+<td>110</td>
+<td>100</td>
+<td>101</td>
+<td>100</td>
+</tr>
+</tbody>
+</table>
+</div><p align="center"><b> J Type instruction</b></p>
+<table class="table" style="color: black">
+<thead>
+<tr>
+<th>OP CODE (1111) 4 BITS</th>
+<th>JUMP VALUE</th>
+</tr>
+</thead>
+</table>
+<h2>
+Event Structure:
+</h2>
+<p style=" text-align: left">
+1. Each team consists of maximum of three participants.<br>
+2. Each team need to implement a base minimum number of instruction to qualify.<br>
+3. Teams will be judged on the basis of number instructions implemented by their architecture.<br>
+4. Points will also be awarded for innovation in design.<br>
+5. First year team will be judged separately for best first yearite.
+</p>
+<h2>
+Judging Criteria:
+</h2>
+<p style=" text-align: left">
+Will be out soon!!!
+</p>
+<h2>
+Contact Details:
+</h2>
+<div class="row" style="color: #302E39">
+<div class="row">
+<div class="col m3">Gaurav Bansal</div>
+<div class="col m6">gaurav.bansal.ece13@itbhu.ac.in</div>
+<div class="col m3">8085097916</div>
+</div>
+<div class="row">
+<div class="col m3">Abhiram Mishra</div>
+<div class="col m6">abhiram.mishra.ece13@iitbhu.ac.in</div>
+<div class="col m3">8004749773</div>
+</div>
+<div class="row">
+<div class="col m3">Harshil Jain</div>
+<div class="col m6">harshil.jain.ece13@iitbhu.ac.in</div>
+<div class="col m3">9602461388</div>
+</div>
+</div>
+</div>
+<script src="static/js/jquery-2.1.1.js"></script>
+<script src="static/js/main.js"></script>  
+</body>
+</html>

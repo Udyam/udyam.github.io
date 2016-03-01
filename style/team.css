@@ -1,7 +1,0 @@
-body {
-    position:relative;
-    background-size: cover;
-    background-color: #bbdefb;
-    background-image: -webkit-linear-gradient( -0deg, #bbdefb 0%, #9adeff 82%, #292423 82%, #292423 82%);
-    background-image: linear-gradient( 0deg, #bbdefb 0%, #9adeff 82%, #292423 82%, #292423 82%);
-}
