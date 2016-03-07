@@ -1,0 +1,104 @@
+#big_wrapper{
+	width:100%;
+	padding-left: 20px;
+	padding-right: 20px;
+	font-size: .5em;
+	margin-top: 30px;
+}
+h1{
+	text-align: center;
+	color: white;
+
+}
+h3{
+	text-align: center;
+	color:white;
+
+}
+#options{
+	margin-right: 10%;
+	margin-left: 10%;
+	text-align:left;
+}
+#options li{
+	text-align: left;
+	 /* For browsers that do not support gradients */    
+    background: -webkit-linear-gradient(left, rgb(0,50,0) , rgb(128, 255, 128)); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(right, rgb(0,50,0) , rgb(128, 255, 128)); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(right, rgb(0,50,0) , rgb(128, 255, 128)); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to right, rgb(0,50,0) , rgb(128, 255, 128)); /* Standard syntax (must be last) */
+	padding-top: 5px;
+	padding-bottom: 5px;
+	padding-left:80px; 
+	color: white;
+	border: 1px solid white;
+	margin-bottom: 50px;
+	border-radius: 30px;
+ 	cursor:pointer;
+
+ }
+ #options li:hover{
+ 	background: -webkit-linear-gradient(left, rgb(50,50,50) , rgb(220,220,220)); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(right, rgb(50,50,50) , rgb(220,220,220)); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(right, rgb(50,50,50) , rgb(220,220,220)); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to right, rgb(50,50,50) , rgb(220,220,220)); /* Standard syntax (must be last) */
+ 	color: white;
+ }
+ #league_table{
+	display:none;
+	background-color:rgb(210,210,210);
+	padding:10px;
+	margin-bottom: 40px; 
+ }
+ #points_table tr td,th{
+ 	text-align: center;
+ 	border: 2px solid black;
+    border-collapse: collapse;
+    padding-right: 10px;
+    padding-left: 10px;
+ }
+ /*
+ #points_table tr th{
+ 	text-align: center;
+ 	border: 1px solid black;
+    border-collapse: collapse;
+     padding-right: 20px;
+    padding-left: 20px;
+
+ }
+ */
+ #goalscorer{
+ 	margin-right: 10%;
+	margin-left: 10%;
+	display:none;
+	background-color:rgb(210,210,210);
+	padding:20px;
+	margin-bottom: 40px; 
+ }
+ #scorers tr td,th{
+ 	text-align: center;
+ 	border: 2px solid black;
+    border-collapse: collapse;
+    padding-right: 20px;
+    padding-left: 20px;
+ }
+
+ #results{
+ 	margin-right: 10%;
+	margin-left: 10%;
+	display:none;
+	background-color:rgb(210,210,210);
+	padding:20px;
+	margin-bottom: 40px; 
+ }
+ #score tr td,th{
+ 	text-align: center;
+ 	border: 2px solid black;
+    border-collapse: collapse;
+    padding-right: 10px;
+    padding-left: 10px;
+ }
+ .less_padding{
+ 	padding-right: 0px;
+    padding-left: 0px;
+ }
